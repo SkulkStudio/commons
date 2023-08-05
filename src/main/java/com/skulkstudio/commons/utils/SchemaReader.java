@@ -8,9 +8,19 @@ import java.nio.charset.StandardCharsets;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * Read a schema file
+ * @since v1.0-SNAPSHOT
+ */
 public final class SchemaReader {
     private SchemaReader() {}
 
+    /**
+     * Gets the statements present in a schema file
+     * @param is The resource {@link InputStream} of the schema file
+     * @return The list of statements present in the schema file.
+     * @throws IOException Thrown if the schema file cannot be read.
+     */
     public static List<String> getStatements(InputStream is) throws IOException {
         List<String> queries = new LinkedList<>();
 
