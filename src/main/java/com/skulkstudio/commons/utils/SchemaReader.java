@@ -1,4 +1,4 @@
-package com.skulkstudio.utils;
+package com.skulkstudio.commons.utils;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -8,7 +8,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.LinkedList;
 import java.util.List;
 
-public class SchemaReader {
+public final class SchemaReader {
     private SchemaReader() {}
 
     public static List<String> getStatements(InputStream is) throws IOException {
